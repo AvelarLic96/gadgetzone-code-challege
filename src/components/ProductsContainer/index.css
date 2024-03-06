@@ -5,8 +5,12 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   gap: 1.5rem;
-  align-items: flex-start;
-  max-width: 72rem;
+  align-items: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.products-loading-state {
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -15,11 +19,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .products-cards-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
 @media (min-width: 1280px) {
   .products-cards-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));

@@ -1,4 +1,4 @@
-.card-container {
+.card-info-container {
   display: grid;
   gap: 0.5rem;
   align-items: flex-start;
@@ -11,6 +11,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  height: 38px;
 }
 
 .card-description {
@@ -19,12 +20,20 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+  height: 76px;
+}
+
+.card-rate-starts-container {
+  display: flex;
+  gap: 0.125rem;
+  align-items: center;
 }
 
 .card-rate-price-container {
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .card-price {
@@ -43,6 +52,7 @@
 
 .card-add-to-cart-button:hover {
   background-color: #1F2937;
+  cursor: pointer;
 }
 
 .card-image-container {

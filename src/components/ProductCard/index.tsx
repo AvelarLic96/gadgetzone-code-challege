@@ -1,17 +1,29 @@
 import { ReactNode } from "react"
+import { Rating } from "react-simple-star-rating"
 
 import './index.css'
 import { Product } from "../../types"
 
 const ProductCard = ({product}: Product): ReactNode => {
+  const {title, description, rating, price, image } = product || {};
+  const priceFormatted = price?.toFixed(2);
+
   return(
     <>
-      <div className="card-container">
-        <p className="card-title">{product?.title}</p>
-        <p className="card-description">{product?.description}</p>
+      <div className="card-info-container">
+        <p className="card-title">{title}</p>
+        <p className="card-description">{description}</p>
         <div className="card-rate-price-container">
-          <div>rate</div>
-          <div className="card-price">{`$ ${product?.price}`}</div>
+          <div className="card-rate-starts-container">
+            <Rating
+              readonly
+              allowFraction
+              initialValue={rating?.rate}
+              size={25}
+              fillColor="#111827"
+            />
+          </div>
+          <div className="card-price">{`$ ${priceFormatted}`}</div>
         </div>
         <button className="card-add-to-cart-button" type="button">{'Add to Cart'}</button>
       </div>
@@ -19,9 +31,9 @@ const ProductCard = ({product}: Product): ReactNode => {
         <img
           alt="Product Image"
           className="card-image"
-          height={243}
-          src={product?.image}
-          width={243}
+          height={262.5}
+          src={image}
+          width={262.5}
         />
       </div>
     </>
