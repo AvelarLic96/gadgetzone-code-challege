@@ -1,0 +1,67 @@
+.card-container {
+  display: grid;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.card-title {
+  font-weight: 700;
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card-description {
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.card-rate-price-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-price {
+  text-align: start;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.card-add-to-cart-button {
+  color: #F9FAFB;
+  background-color: #111827;
+  border-radius: 0.3rem;
+  height: 2rem;
+}
+
+.card-add-to-cart-button:hover {
+  background-color: #1F2937;
+}
+
+.card-image-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-image {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #E5E7EB;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-image-container {
+    gap: 2rem;
+  }
+}

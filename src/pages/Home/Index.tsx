@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import { getProducts } from "../../services/products-api";
 import { IProducts } from "../../types";
+import ProductsContainer from "../../components/ProductsContainer";
 
 const Home = () : ReactNode  => {
   const [products, setProducts] = useState<IProducts[]>()
@@ -16,7 +17,7 @@ const Home = () : ReactNode  => {
   }, [])
 
   return(
-    <></>
+    <ProductsContainer products={products} />
   )
 }
 
