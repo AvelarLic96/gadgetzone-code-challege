@@ -10,3 +10,11 @@ export interface IProducts {
     count: number;
   }
 }
+
+export type Products = {
+  products: IProducts[] | undefined
+}
+
+export type Product = {
+  product: IProducts | undefined
+}

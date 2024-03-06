@@ -1,5 +1,7 @@
+import { ReactNode } from 'react';
 import './index.css'
-const Header = () => {
+
+const Header = (): ReactNode => {
   return (
     <header className="header">
       <div className='header-container'>
