@@ -12,9 +12,15 @@ export interface IProducts {
 }
 
 export type Products = {
-  products: IProducts[] | undefined
+  products: IProducts[] | undefined;
 }
 
 export type Product = {
-  product: IProducts | undefined
+  product: IProducts | undefined;
+}
+
+export interface ErrorPageTexts {
+  title: string;
+  description: string;
+  reloadPage: string;
 }

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import './index.css'
+import { errorPageTexts } from "../../constants";
 
 type IconProps = {
   className: string,
@@ -28,19 +29,17 @@ const AlertTriangleIcon = (props: IconProps): ReactNode => {
 }
 
 const ErrorLanding = (): ReactNode => {
+  const {title, description, reloadPage} = errorPageTexts
   return(
     <main className="error-container">
       <div className="error-content-container">
         <div className="error-header-container">
           <AlertTriangleIcon className="error-header-icon"  />
-          <h1 className="error-header-title">Oops, something went wrong!</h1>
+          <h1 className="error-header-title">{title}</h1>
         </div>
         <div className="error-body-container">
-          <p className="error-body-text">
-            The platform is currently experiencing issues. Our team is investigating and we will provide updates as
-            soon as possible.
-          </p>
-          <button className="error-body-button" onClick={()=>{location.reload()}}>Reload page</button>
+          <p className="error-body-text">{description}</p>
+          <button className="error-body-button" onClick={()=>{location.reload()}}>{reloadPage}</button>
         </div>
       </div>
     </main>
