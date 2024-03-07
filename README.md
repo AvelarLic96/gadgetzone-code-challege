@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Gadget Zone 🚀
 
-Currently, two official plugins are available:
+A responsive e-commerce product page for a fictional online store
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Install gadgetzone-code-challenge with npm
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  SSH git clone git@github.com:AvelarLic96/gadgetzone-code-challege.git
+  Or
+  HTTPS git clone https://github.com/AvelarLic96/gadgetzone-code-challege.git
+  cd gadgetzone-code-challenge
+  npm install
+  npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## API Reference
+
+#### Get API Products
+
+```http
+  GET https://fakestoreapi.com/products/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `none` |  | |
+
+## Dependencies
+
+- Node: v18.17.0
+- react: 18.2.0
+- react-dom: 18.2.0
+- react-loader-spinner
+- react-simple-star-rating: 5.1.7
+
+## Dev-dependecies
+
+- @types/react: 18.2.56
+- @types/react-dom: 18.2.19
+- @typescript-eslint/eslint-plugin: 7.0.2
+- @typescript-eslint/parser: 7.0.2
+- @vitejs/plugin-react: 4.2.1
+- eslint: 8.56.0
+- eslint-plugin-react-hooks: 4.6.0
+- eslint-plugin-react-refresh: 0.4.5
+- typescript: 5.2.2
+- vite: 5.1.4
+
+## Documentation
+
+[react-loader-spinner](https://mhnpd.github.io/react-loader-spinner/docs/intro)
+
+[react-simple-star-rating](https://www.npmjs.com/package/react-simple-star-rating)
