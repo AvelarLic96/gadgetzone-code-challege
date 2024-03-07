@@ -5,9 +5,11 @@ import './index.css'
 import { Product } from "../../types"
 
 const ProductCard = ({product}: Product): ReactNode => {
+  // Destructure products object
   const {title, description, rating, price, image } = product || {};
+  // Formate price to add 2 decimals
   const priceFormatted = price?.toFixed(2);
-
+  // Renders product card
   return(
     <>
       <div className="card-info-container">
