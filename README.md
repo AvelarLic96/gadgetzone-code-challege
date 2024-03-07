@@ -8,9 +8,9 @@ A responsive e-commerce product page for a fictional online store
 Install gadgetzone-code-challenge with npm
 
 ```bash
-  SSH git clone git@github.com:AvelarLic96/gadgetzone-code-challege.git
+  SSH git clone git@github.com:AvelarLic96/gadgetzone-code-challenge.git
   Or
-  HTTPS git clone https://github.com/AvelarLic96/gadgetzone-code-challege.git
+  HTTPS git clone https://github.com/AvelarLic96/gadgetzone-code-challenge.git
   cd gadgetzone-code-challenge
   npm install
   npm run dev
