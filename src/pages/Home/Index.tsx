@@ -15,8 +15,6 @@ const Home = () : ReactNode  => {
     try {
       const products = await getProducts()
       const data = await products.json()
-      console.log('typeof', typeof data)
-      console.log('data', data.length)
       if (data.length) {
         setProducts(data)
         setIsLoading(false)
